@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    
+    <style>
+        div {
+        background-color: blue;
+        color: white;
+        }
+        
+        span {
+        background-color: green;
+        color: white;
+        }
+        
+        div.box {
+         color: red;
+         background-color: yellow;
+         }
+        
+        button {
+         height: 20px;
+         width: 60px;
+         border: solid;
+         background-color: skyblue;
+         color: white;
+         border-color: blue;
+         border-width: 2px;
+         font-weight: bold;
+         border-radius: 3px;
+         }
+         
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+    
+    <p>This is paragraph.</p>
+    
+    <a href="https://www.google.com/search?q=google&oq=google&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDAgCECMYJxiABBiKBTINCAMQABiDARixAxiABDIKCAQQABixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPDIGCAgQBRhAMgoICRAAGLEDGIAEMgoIChAAGLEDGIAEMgoICxAAGLEDGIAEMgoIDBAAGLEDGIAEMgoIDRAAGLEDGIAEMg0IDhAAGIMBGLEDGIAE0gEIMjUzOGowajeoAhSwAgHxBWGDDeMPd0PS&client=ms-android-xiaomi-rvo3&sourceid=chrome-mobile&ie=UTF-8">Google</a>
+    
+    <br>
+    <br>
+    <img src="https://share.google/FTMwB3hEYSReNHZgl" alt="Note_Book" height="200px" width="200px"></img>
+    <hr>
+    <br>
+    <b>Bold</b>
+    <br>
+    <i>Italic</i>
+    <br>
+    <u>Underlined</u>
+    <br>
+    
+    <big>This is big.</big>
+    <br>
+    <small>This is small.</small>
+    <br>
+    <hr>
+    <!--Horizontal Ruler = hr -->
+    
+    <big>H<sub>2</sub>O</big>
+    <br> 
+    <big>2<sup>2</sup>+3<sup>2</sup>=13</big>
+    <br>
+    
+    <pre>
+        *
+       * *
+      * * *
+    </pre>
+    <hr>
+    <a href="https://mlwbd.is/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnH9nyd1T9Q10j-T97gZ2QJ_y7yV4cyj7Q1lbqYC89Og&s=10" alt="Mlwbd" height="200px"></img></a>
+    <hr>
+    
+    <div>
+        This is a block element and
+        It takes full width...
+    </div>
+    
+    <span>
+        This is a inline element and
+        It only takes how much height and 
+        width it needed.
+    </span>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Coconut</li>
+        <li>Guava</li>
+    </ul>
+    
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+    </ol>
+    <hr>
+    <table>
+        <caption>Love life</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smita</td>
+                <td>Single</td>
+            </tr>
+            <tr>
+                <td>Anik</td>
+                <td>Single</td>
+            </tr>
+            <tr>
+                <td>Prianto</td>
+                <td>Taken</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>This is a form..</h2>
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <input type="password" placeholder="Enter password">
+        <br>
+        <p>Enter your gender:</p>
+        
+        <label for="male">
+        <input type="radio" value="Male" name="gender" id="male">Male
+        <br>
+        </label>
+        
+        <label for="female">
+        <input type="radio" value="Female" name="gender" id="female">Female
+        </label>
+        
+        <hr>
+        
+        <div id="div1" class="box">
+            A
+        </div>
+        
+        <div id="div2" class="box">
+            B
+        </div>
+        
+        <p>Enter your fav subjects:</p>
+        <br>
+        <label for="math">
+            <input type="checkbox" value="math" name="Subjects" id="101">Math
+        </label>
+        <br>
+        
+        <label for="english">
+            <input type="checkbox" value="english" name="Subjects" id="102">English
+        </label>
+        <br>
+        
+        <label for="bangla">
+            <input type="checkbox" value="bangla" name="Subjects" id="103">Bangla
+        </label>
+        <br>
+        
+        <hr>
+        
+        <p>Enter your feedback here:</p>
+        <br>
+        <textarea name="feedback" id="104" placeholder="Enter your feedback.." rows="5">
+            
+        </textarea>
+        <br>
+        
+        <p>Enter your city:</p>
+        <select name="city" id="city">
+            <option value="Sylhet">Sylhet</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Cumilla">Cumilla</option>
+        </select>
+        <br><br>
+        <input type="submit" value="submit">
+        <hr> 
+        
+        
+    </form>
+    
+    <video src="">
+        My Vidow
+    </video>
+    
+    <br>
+    <button>Good bye</button>
+</body>
+</html>
