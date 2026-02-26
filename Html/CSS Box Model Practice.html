@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model Practice</title>
+    <style>
+       .box {
+         background-color: aqua;
+         }
+       .box1 {
+         color: red;
+         padding: 10px;
+         margin: 5px;
+         border: 2px solid red;
+         height: 100px;
+         }
+       .box2 {
+         color: blue;
+         box-sizing: border-box;
+         padding: 10px;
+         margin: 5px;
+         border: 2px solid blue;
+         height: 100px;
+         }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am Box_1</div>
+    <div class="box box2">I am Box_2</div>
+    
+    <!-- Total Width =
+  Content Width
++ Padding Left + Padding Right
++ Border Left + Border Right
++ Margin Left + Margin Right -->
+
+    <!-- Total Height =
+  Content Height
++ Padding Top + Padding Bottom
++ Border Top + Border Bottom
++ Margin Top + Margin Bottom -->
+
+</body>
+</html>
