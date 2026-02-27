@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Hovering</title>
+    <style>
+      .nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: red;
+        margin-bottom: 100px;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        border: 2px solid black;
+        }
+      .container {
+        background-color: black;
+        <!-- display: flex;
+        align-items: center; -->
+        }
+        .container:hover .card {
+         opacity: 0.4;
+        }
+        .container .card:hover {
+         opacity: 1;
+        }
+       img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        }
+      .card {
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        cursor: pointer;
+        }
+        .card:hover {
+              transform: scale(1.30);
+              border: 1px solid white;
+        }
+        
+        .one {
+        height: 250px;
+        width: 150px;
+        }    
+      .two {
+        width: 150px;
+        height: 250px;
+        } 
+      .three {
+        width: 150px;
+        height: 250px;
+        }
+        
+      .four {
+        width: 150px;
+        height: 250px;
+        }
+        
+      .five {
+        width: 150px;
+        height: 250px;
+        }
+      .six {
+        width: 150px;
+        height: 250px;
+        }
+      .re4_boss1 { 
+         margin-top: 100px;
+         margin-bottom: 10px;
+       }
+      .passage {
+         font-family: Arial;
+         font-size: 25px;
+         line-height: 40px;
+         }
+       span {
+         color: red;
+         font-size: 30px;
+         font-weight: bold;
+         }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <p>Resident Evil</p>
+    </div>
+    <div class="container">
+        <div class="card one"><img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe9_1.jpeg" alt=""></img></div>
+        <div class="card two"><img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe4_1.jpeg" alt=""></img></div>
+        <div class="card three"><img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe4_2.jpeg" alt=""></img></div>
+        <div class="card four"><img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe9_2.jpeg" alt=""></img></div>
+        <div class="card five"><img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe4_regenerator.jpeg" alt=""></img></div> 
+        <div class="card six"><img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe9_3.jpeg" alt=""></img></div> 
+    </div>
+    
+    <img src="content://com.android.externalstorage.documents/tree/primary%3AImage/document/primary%3AImage%2FRe4_boss1.png" alt="" class="re4_boss1"></img>
+   
+   <p class="passage">
+ <span>Resident Evil</span> is a legendary survival horror game series developed by Capcom. First released in 1996, the original game takes place inside the mysterious Spencer Mansion, where players control characters like Jill Valentine or Chris Redfield. They are members of a special police unit called S.T.A.R.S., sent to investigate strange murders near Raccoon City.
+
+As players explore the dark and creepy mansion, they encounter zombies, mutated creatures, and deadly traps. The game focuses on limited ammunition, puzzle-solving, and careful exploration, which creates tension and fear. The fixed camera angles and haunting background music add to the suspenseful atmosphere.
+
+Over the years, the Resident Evil series has evolved from classic survival horror to more action-focused gameplay, especially in later titles. However, the core theme remains the same—biological experiments gone wrong and the terrifying consequences of viral outbreaks.
+
+Resident Evil is not just a game; it has become a global franchise, inspiring movies, novels, and remakes. Its combination of horror, strategy, and storytelling makes it one of the most influential video game series in history.
+   </p>
+</body>
+</html>
