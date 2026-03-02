@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Layouts 1</title>
+    <style>
+        .main-container {
+            background-color: rgb(245, 245, 220);
+            width: 400px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .profile-pic {
+            display: inline-block;
+            vertical-align: top;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .profile-pic img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .text-section {
+            display: inline-block;
+            vertical-align: top;
+            width: 170px;
+            margin-left: 10px;
+            line-height: 18px;
+        }
+
+        .text-section p {
+            margin: 10px 0;
+        }
+
+        .main-name {
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .follow-button {
+            height: 35px;
+            width: 80px;
+            border: none;
+            margin-top: 30px;
+            background-color: #1877f2;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .follow-button:hover {
+            background-color: #166fe5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="profile-pic">
+            <img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg" alt="">
+        </div>
+
+        <div class="text-section">
+            <p class="main-name">Orthi</p>
+            <p>The Cat</p>
+            <p>Popular</p>
+        </div>
+
+        <div class="button-container">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+
+</body>
+</html>
