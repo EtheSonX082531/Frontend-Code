@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+          background-color: black;
+          display: grid;
+          grid-template-columns: 300px;
+          padding-top: 20px;
+          padding-left: 40px;
+          font-family: 'Dancing Script', cursive;
+          
+          background-image: url("https://assets-prd.ignimgs.com/2023/04/03/blue-beetle-newbutton-1680538469188.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+  
+          }
+          
+       .container {
+         padding-top: 50px;
+         display: grid;
+         grid-template-rows: 100px 60px 60px 60px 60px;
+         justify-items: center;
+         border-style: solid;
+         border-color: white;
+         border-width: 1px;
+         border-radius: 10px;
+         height: 500px;
+         row-gap: 15px;
+         box-shadow: 0px 0px 20px rgb(148, 0, 211),
+                     0px 0px 40px rgb(148, 0, 211),
+                     0px 0px 60px rgb(148, 0, 211);
+         }
+        
+        h1 {
+         color: white;
+         text-align: center;
+         font-family: 'Dancing Script', cursive;
+         }
+        input {
+          width: 250px;
+          margin-top: 20px;
+          text-align: center;
+          border-style: solid;
+          border-color: white;
+          border-width: 1px;
+          background-color: black;
+          color: white;
+          font-family: 'Dancing Script', cursive;
+          font-size: 15px;
+          font-weight: bold;
+          box-shadow: 0px 0px 20px rgb(148, 0, 211);
+          }
+        input::placeholder {
+          color: white;
+          }
+        img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         }
+        .dp-image {
+          height: 120px;
+          width: 120px;
+          border: 1px solid white;
+          border-radius: 90px;
+          overflow: hidden;
+          box-shadow: 0px 0px 20px rgb(148, 0, 211);
+          }
+        .click-me {
+          margin-top: 20px;
+          height: 50px;
+          width: 120px;
+          border-color: white;
+          border-style: solid;
+          border-width: 1px;
+          background-color: black;
+          box-shadow: 0px 0px 20px rgb(148, 0, 211);
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          font-family: 'Dancing Script', cursive;
+          }
+    </style>
+</head>
+<body>
+    <h1>Blue Beetle Registration Form</h1>
+    <div class="container">
+        <div class="dp-image">
+            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/11592.jpg" alt=""></img>
+        </div>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="tel" placeholder="Phone Number">
+        <button class="click-me">
+            Register √
+        </button>
+    </div>
+</body>
+</html>
