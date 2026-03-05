@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Practice</title>
+    
+    <style>
+       .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 15px;
+          }
+       .profile {
+          height: 220px;
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          }
+       .info {
+          display: grid;
+          grid-template-columns: 30px 1fr;
+          column-gap: 15px;
+          align-items: center;
+          }
+       .dp-image {
+          height: 120px;
+          width: 100%;
+          object-fit: cover;
+          }
+        .id-name {
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 5px;
+          margin-left: 8px;
+          margin-bottom: 0px;
+          }
+         button {
+           height: 25px;
+           width: 70px;
+           border-style: none;
+           font-size: 10px;
+           background-color: rgb(0, 132, 255);
+           color: white;
+           margin-left: 8px;
+           margin-top: 1px;
+           }
+        .mutual-friends {
+           font-size: 10px;
+           }
+        .sub-image {
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          margin-left: 8px;
+          }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="profile">
+            <img class="dp-image" src="https://i.cdn.newsbytesapp.com/images/l17720250624114754.jpeg?tr=w-480" alt=""></img>
+            <p class="id-name">Iron-Man</p>
+            <div class="info">
+                <img class="sub-image" src="https://images.immediate.co.uk/production/volatile/sites/3/2020/06/Hulk-smash-8235df0.jpg?quality=90&webp=true&resize=1012,675" alt=""></img>
+                <p class="mutual-friends">2 mutual Friends</p>
+            </div>
+            <button>
+                Add Friend
+            </button>
+        </div>
+        
+        <div class="profile">
+            
+            <img class="dp-image" src="https://cdn.esquireindia.co.in/article/2025-08-11T14%3A35%3A30.664Z-batman2LEAD%20%281%29.jpg" alt=""></img>
+            <p class="id-name">Bat-Man</p>
+            <div class="info">
+                <img class="sub-image" src="https://images.plex.tv/photo?size=medium-240&scale=2&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fe%2Fgracenote%2Fefe75f7380b461343aa6bcdcb223f094.jpg" alt=""></img>
+                <p class="mutual-friends">8 mutual Friends</p>
+            </div>
+            <button>
+                Add Friend
+            </button>
+            
+        </div>
+        
+        <div class="profile">
+            
+            <img class="dp-image" src="https://images.plex.tv/photo?size=medium-240&scale=2&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fe%2Fgracenote%2Fefe75f7380b461343aa6bcdcb223f094.jpg" alt=""></img>
+            <p class="id-name">Pad-Man</p>
+            <div class="info">
+                <img class="sub-image" src="https://images.immediate.co.uk/production/volatile/sites/3/2020/06/Hulk-smash-8235df0.jpg?quality=90&webp=true&resize=1012,675" alt=""></img>
+                <p class="mutual-friends">13 mutual Friends</p>
+            </div>
+            <button>
+                Add Friend
+            </button>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
