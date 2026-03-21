@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shorshe ilish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+         font-family: "Karla", sans-serif;
+         }
+        a {
+         color: white;
+         border-style: none;
+         text-decoration: none;
+         }
+       .nav-bar {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         background-color: rgb(220, 53, 69);
+         height: 60px;
+         align-items: center;
+         }
+       .blank {
+         flex: 1;
+         }
+       #site-name {
+         color: white;
+         font-weight: bold;
+         font-size: 25px;
+         padding-left: 40px;
+         }
+      .pages {
+         display: flex;
+         flex-direction: row;
+         gap: 20px;
+         padding-right: 40px;
+         color: white;
+         }
+       h2 {
+         text-align: center;
+         font-weight: bold;
+         font-size: 30px;
+         }
+      .food-menu {
+        height: 60%;
+        width: 95%;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        }
+      .food-box {
+        padding: 5px;
+        border: 1px solid rgb(150, 150, 150);
+        border-radius: 5px;
+        }
+      .food-box:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+       }
+      .food {
+         height: 320px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         margin: 10px;
+         }
+      .food-image {
+         width: 100%;
+         height: 150px;
+         overflow: hidden;
+         margin-bottom: 15px;
+         }
+       img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         }
+       .order-button {
+         margin-bottom: 0px;
+         padding-top: 8px;
+         padding-bottom: 8px;
+         padding-left: 25px;
+         padding-right: 25px;
+         font-size: 20px;
+         font-weight: bold;
+         color: white;
+         background-color: rgb(220, 53, 69);
+         border-style: none;
+         border-radius: 5px;
+         }
+       .item-name {
+         font-weight: bold;
+         font-size: 22px;
+         color: black;
+         margin-top: 0px;
+         margin-bottom: 5px;
+         }
+       .item-info {
+         font-size: 15px;
+         color: black;
+         text-align: center;
+         margin-top: 0px;
+         }
+       .line {
+         width: 80%;
+         margin-top: 0px;
+         }
+       .footer {
+         height: 40px;
+         background-color: rgb(230, 230, 230);
+         text-align: center;
+         box-sizing: border-box;
+         padding-top: 10px;
+         }
+       .footer-text {
+         margin: 0;
+         }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <p id="site-name">Shorshe ilish</p>
+        <div class="blank">
+            
+        </div>
+        <div class="pages">
+            <p>Home</p>
+            <p>Menu</p>
+            <a href="aboutUs.html" target="_blank"><p>About Us</p></a>
+            <p>Contact</p>
+        </div>
+    </div>
+    <h2>Our Menu</h2>
+    <hr>
+    
+    <div class="food-menu">
+        
+      <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://images.squarespace-cdn.com/content/v1/5ea5f3913b0ccf06d0ec2563/1647632824420-2U3SJU6ZYW3L8DJQE9GW/Pohela+Boishakh+2021+-+The+Spice+Odyssey+%2850%29.jpg?format=2500w" alt=""></img>
+            </div>
+            <p class="item-name">Shorshe ilish</p>
+            <hr class="line">
+            <p class="item-info">Shorshe Ilish — tender hilsa in a bold, aromatic mustard sauce.</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+        <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://media.assettype.com/gulfnews%2Fimport%2F2021%2F08%2F24%2FBengali-recipe--Chicken-kosha-_17b778e9944_large.jpg?w=640&auto=format%2Ccompress&fit=max" alt=""></img>
+            </div>
+            <p class="item-name">Chicken Kosha</p>
+            <hr class="line">
+            <p class="item-info">Chicken kosha is spicy, rich, and deeply flavorful chicken curry.
+</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+        <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2022/08/bitter-gourd-chips-1.jpg" alt=""></img>
+            </div>
+            <p class="item-name">Korola Vaji</p>
+            <hr class="line">
+            <p class="item-info">Korola vaji is a simple, bitter fried vegetable dish.
+</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+        <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://media.istockphoto.com/id/1130228942/photo/indian-dal-traditional-indian-soup-lentils-indian-dhal-spicy-curry-in-bowl-spices-herbs.jpg?s=612x612&w=0&k=20&c=ciPGZR4hkLeUL-nRxY4iAh539zYLgUkNz82GG_nJG5A=" alt=""></img>
+            </div>
+            <p class="item-name">Dal Fry</p>
+            <hr class="line">
+            <p class="item-info">Dal fry is a flavorful lentil dish cooked with spices, onion, and garlic.</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+     
+      <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://atanurrannagharrecipe.com/wp-content/uploads/2023/07/Rui-Macher-Masala-Curry-Recipe-Atanur-Rannaghar-1024x683.jpg" alt=""></img>
+            </div>
+            <p class="item-name">Rui Macher Jhol</p>
+            <hr class="line">
+            <p class="item-info">Rui macher jhol is a light, spicy fish curry.</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+        <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://images.pexels.com/photos/28674690/pexels-photo-28674690.jpeg" alt=""></img>
+            </div>
+            <p class="item-name">Vuna Mutton</p>
+            <hr class="line">
+            <p class="item-info">Vuna mutton is a spicy, slow-cooked mutton dish with rich flavor.
+</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+        <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://media.istockphoto.com/id/515853026/photo/traditional-rasmalai-or-ras-malai-indian-dessert-bengali-sweet.jpg?s=612x612&w=0&k=20&c=LYftdDAkIa8lVyfmwt8iK-OPSQr2KCcJcYpPhbFtFBk=" alt=""></img>
+            </div>
+            <p class="item-name">Comillar Roshmalai</p>
+            <hr class="line">
+            <p class="item-info">Comillar roshmalai is a soft sweet in creamy milk.
+</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+        <div class="food-box">
+        <div class="food">
+            <div class="food-image">
+                <img src="https://thumbs.dreamstime.com/b/moong-dal-khichdi-khichri-indian-national-dish-food-selective-focus-103105975.jpg?w=992" alt=""></img>
+            </div>
+            <p class="item-name">Khichuri</p>
+            <hr class="line">
+            <p class="item-info">Khichuri is a comforting one-pot dish of rice and lentils cooked with spices.</p>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="footer">
+        <p class="footer-text">© 2026 Shorshe ilish. All rights reserved to Anik Roy.</p>
+    </div>
+</body>
+</html>
