@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shorshe ilish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: "Karla", sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    a {
+      color: white;
+      border-style: none;
+      text-decoration: none;
+    }
+
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(217, 60, 52);
+      height: 60px;
+      align-items: center;
+    }
+
+    .blank {
+      flex: 1;
+    }
+
+    #site-name {
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      padding-left: 40px;
+    }
+
+    .pages {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding-right: 40px;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    .mid-segment {
+      height: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .side-image {
+      height: 400px;
+      width: 50%;
+    }
+
+    .description {
+      height: 400px;
+      width: 300px;
+    }
+
+    span {
+      color: rgb(220, 53, 69);
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 240px;
+      width: 350px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .img-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 300px;
+      gap: 10px;
+    }
+
+    .card-img {
+      height: 80px;
+      width: 80px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .footer {
+      height: 40px;
+      background-color: rgb(230, 230, 230);
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 10px;
+    }
+
+    .footer-text {
+      margin: 0;
+    }
+
+    #apple {
+      height: 70px;
+      width: 70px;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .more-information {
+      height: 40px;
+      width: 200px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-style: none;
+      background-color: rgb(217, 60, 52);
+      color: white;
+      font-weight: bold;
+    }
+
+    .more-information:hover {
+      background-color: red;
+      font-size: 20px;
+      box-shadow: 0px 0px 20px red;
+      transition: background-color 0.3s, font-size 0.3s, box-shadow 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <p id="site-name">Shorshe ilish</p>
+    <div class="blank">
+
+    </div>
+    <div class="pages">
+      <p>Home</p>
+      <a href="./index.html"><p>Menu</p></a>
+      <p>About Us</p>
+      <a href="./contact.html"><p>Contact</p></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>About Us</h1>
+    <hr>
+    <div class="mid-segment">
+      <div class="side-image">
+        <img src="fish.jpg" alt="">
+      </div>
+      <div class="description">
+        <h2>Authentic Bengali Flavors, Delivered Fresh</h2>
+        <p class="text">At <span>Shorshe Ilish</span>, we bring authentic Bengali flavors straight to your doorstep.
+          From fragrant rice dishes to rich, flavorful curries, every meal is prepared with fresh ingredients and
+          traditional recipes.
+          <br>
+          <br>
+          Enjoy home-style cooking without the wait—fresh, delicious, and delivered fast.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="services">
+
+
+      <div class="service-card">
+        <div class="img-title">
+          <div id="apple" class="card-img"><img src="https://thumbs.dreamstime.com/b/green-apple-24562468.jpg?w=576"
+              alt="">
+          </div>
+          <h3>Fresh Ingredients</h3>
+        </div>
+        <p>We use only fresh, high-quality ingredients to prepare every meal. From carefully selected vegetables to
+          premium spices, each item is chosen to ensure great taste, nutrition, and authentic flavor in every bite.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="img-title">
+          <div class="card-img"><img
+              src="https://thumbs.dreamstime.com/b/delivery-truck-cardboard-box-package-shipping-19236973.jpg?w=768"
+              alt="">
+          </div>
+          <h3>Fast Delivery</h3>
+        </div>
+        <p>We ensure fast and reliable delivery so your food arrives hot, fresh, and on time. Our team works efficiently
+          to reduce waiting time while maintaining quality and as well as the quantity, So you can enjoy every meal at
+          its best.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="img-title">
+          <div class="card-img"><img
+              src="https://media.istockphoto.com/id/1184567639/vector/ecology-sphere-logo-formed-by-twisted-green-leaves.jpg?s=612x612&w=0&k=20&c=RuhMuEHwiUk50BonfU2yDBpo3IOBa7nywRdY069-TCU="
+              alt="">
+          </div>
+          <h3>Easy Ordering</h3>
+        </div>
+        <p>Ordering from Shorshe Ilish is quick and simple. Browse your favorite dishes, add them to your cart, and
+          place your order in just a few easy steps. Enjoy a smooth and hassle-free experience every time and also you
+          have the cash on delivery available.
+        </p>
+      </div>
+
+
+
+    </div>
+
+    <button class="more-information">More Information</button>
+  </div>
+
+  <div class="footer">
+    <p class="footer-text">© 2026 Shorshe ilish. All rights reserved to Anik Roy.</p>
+  </div>
+</body>
+
+</html>

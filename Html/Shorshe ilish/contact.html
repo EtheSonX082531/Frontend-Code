@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorshe ilish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Karla", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        a {
+            color: white;
+            border-style: none;
+            text-decoration: none;
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(220, 53, 69);
+            height: 60px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .blank {
+            flex: 1;
+        }
+
+        #site-name {
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            padding-left: 40px;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-right: 40px;
+            color: white;
+        }
+
+        .footer {
+            height: 40px;
+            background-color: rgb(230, 230, 230);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 10px;
+        }
+
+        .footer-text {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .mid-segment {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 60vh;
+            margin: 40px auto;
+            gap: 25px;
+        }
+
+        form {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            border-style: none;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        a {
+            color: white;
+            border-style: none;
+            text-decoration: none;
+        }
+
+        .contact-information {
+            height: 100%;
+            width: 45%;
+            border-style: none;
+            box-shadow: 0px 0px 5px black;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input {
+            height: 10%;
+            width: 80%;
+            border: 1px solid black;
+        }
+
+        #message {
+            height: 20%;
+            width: 80%;
+            border: 1px solid black;
+        }
+
+        .submit {
+            height: 10%;
+            width: 30%;
+            font-size: 20px;
+            background-color: rgb(220, 53, 69);
+            border-style: none;
+            border-radius: 40px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .submit:hover {
+            background-color: red;
+            font-size: 25px;
+            box-shadow: 0px 0px 20px red;
+            transition: background-color 0.3s, font-size 0.3s, box-shadow 0.3s;
+        }
+
+        .wlcm,
+        .cntct {
+            font-size: 30px;
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+
+        hr {
+            margin-top: 0px;
+            width: 30%;
+        }
+
+        .cnct-card {
+            height: 5%;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .map {
+            height: 340px;
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        .info {
+          font-size: 20px;
+        }
+        
+       .sign-img {
+         height: 20px;
+         width: 20px;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <p id="site-name">Shorshe ilish</p>
+        <div class="blank">
+
+        </div>
+        <div class="pages">
+            <p>Home</p>
+            <a href="./index.html">
+                <p>Menu</p>
+            </a>
+            <a href="aboutUs.html">
+                <p>About Us</p>
+            </a>
+            <p>Contact</p>
+        </div>
+    </div>
+    <!-- This is navbar end -->
+
+    <div class="content">
+        <h1>Contact Us</h1>
+        <hr>
+
+        <div class="mid-segment">
+            <form>
+                <p class="wlcm">Welcome</p>
+                <hr>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea id="message" name="message" placeholder="Tell Us About Any Query"></textarea>
+                <button class="submit">
+                    Submit
+                </button>
+            </form>
+
+            <div class="contact-information">
+                <p class="cntct">Contact Information</p>
+                <hr>
+
+                <div class="cnct-card">
+                    <div class="sign-img">
+                        <img src="https://us.123rf.com/450wma/ariesticon/ariesticon2006/ariesticon200600185/149138139-pin-icon-isolated-on-white-background-location-icon-map-pointer-icon-point-locator-address.avif">
+                    </div>
+                    <p class="info">123 Food St, Sylhet City, FC 12345</p>
+                </div>
+                
+                <div class="cnct-card">
+                    <div class="sign-img">
+                        <img src="https://previews.123rf.com/images/photoart23d/photoart23d1902/photoart23d190201384/117662217-phone-with-waves-symbol-icon-red-gradient-isolated-vector-illustration.jpg">
+                    </div>
+                    <p class="info">+1 234 567 8900</p>
+                </div>
+                
+                <div class="cnct-card">
+                    <div class="sign-img">
+                        <img src="https://previews.123rf.com/images/popcornarts/popcornarts2402/popcornarts240202002/225494925-this-is-beautiful-handcrafted-pixel-perfect-red-and-black-filled-ui-icon.jpg">
+                    </div>
+                    <p class="info">shorsheilish@gmail.com</p>
+                </div>
+
+                <div class="map">
+                    <img src="https://i.sstatic.net/HILmr.png" alt=""></img>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 40px; color: rgb(0, 0, 0);">Thank You</p>
+    </div>
+
+    <!-- This is footer -->
+    <div class="footer">
+        <p class="footer-text">© 2026 Shorshe ilish. All rights reserved to Anik Roy.</p>
+    </div>
+    
+</body>
+
+</html>
