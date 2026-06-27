@@ -2,205 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Animation</title>
+
     <style>
-       body {
-        display: flex;
-        background-color: black;
-        flex-direction: column;
-        Justify-content: center;
-        align-items: center;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
-       h1 {
-        text-align: center;
-        font-weight: bold;
-        color: white;
+
+        body{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            background:black;
+            min-height:100vh;
+            gap:40px;
+            padding:40px 0;
+            perspective:1000px;
         }
-       img {
-        object-fit: cover;
-        width: 150px;
-        height: 150px;
+
+        h1{
+            color:white;
+            text-align:center;
+            margin-bottom:20px;
         }
-        
-       .box {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         height: 150px;
-         width: 150px;
-         background-color: white;
-         color: white;
-         font-weight: bold;
-         margin-bottom: 40px;
-         border: 1px solid white;
-         border-radius: 10px;
-         box-shadow: 5px 5px 40px rgba(255, 255, 255, 0.4);
-         overflow: hidden;
-         transition: transform 2s;
-         }
-       .one:hover {
-         transform: scale(1.5);
-         }
-       .two:hover {
-         transform: rotate(360deg);
-         }
-       .three:hover {
-         transform: translate(60px,60px);
-         }
-       .four:hover {
-         transform: skew(20deg,20deg);
-         }
-       .five:hover {
-         transform: rotateX(180deg);
-         transform: rotateY(180deg);
-         }
-       .six:hover {
-         transform: translate(60px) rotate(30deg);
-         }
+
+        .box{
+            width:150px;
+            height:150px;
+            background:white;
+            border:1px solid white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:5px 5px 40px rgba(255,255,255,.4);
+            transition:transform 1s ease;
+        }
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        /* Scale */
+        .one:hover{
+            transform:scale(1.5);
+        }
+
+        /* Rotate */
+        .two:hover{
+            transform:rotate(360deg);
+        }
+
+        /* Translate */
+        .three:hover{
+            transform:translate(60px,60px);
+        }
+
+        /* Skew */
+        .four:hover{
+            transform:skew(20deg,20deg);
+        }
+
+        /* 3D Flip */
+        .five:hover{
+            transform:rotateX(180deg) rotateY(180deg);
+        }
+
+        /* Translate + Rotate */
+        .six:hover{
+            transform:translateX(60px) rotate(30deg);
+        }
+
     </style>
 </head>
 <body>
+
     <h1>CSS TRANSFORM ANIMATION</h1>
-    
+
     <div class="box one">
         <img src="https://images.immediate.co.uk/production/volatile/sites/3/2026/03/how-old-is-leon-resident-evil-requiem-acf45ce.jpg?quality=90&webp=true&resize=1200,800" alt="">
     </div>
-    
+
     <div class="box two">
         <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/03/how-to-sharpen-leon-s-axe-in-resident-evil-requiem.jpg?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
     </div>
-    
+
     <div class="box three">
         <img src="https://images.immediate.co.uk/production/volatile/sites/3/2025/06/resident-evil-requiem-re9-release-date-73f9c89.jpg?quality=90&webp=true&resize=1200,800" alt="">
     </div>
-    
+
     <div class="box four">
-       <img src="https://assetsio.gnwcdn.com/leon-outside-of-rpd.jpg?width=380&quality=85&format=jpg&dpr=3&auto=webp" alt="">
+        <img src="https://assetsio.gnwcdn.com/leon-outside-of-rpd.jpg?width=380&quality=85&format=jpg&dpr=3&auto=webp" alt="">
     </div>
-    
+
     <div class="box five">
         <img src="https://thunderword.highline.edu/wp-content/uploads/2026/03/Re9.jpg" alt="">
     </div>
-    
+
     <div class="box six">
         <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/06/leon-next-to-grace-ashcroft-in-front-of-raccoon-city.png?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
     </div>
-    
-</body>
-</html>       .six:hover {
-         transform: translate(60px) rotate(30deg);
-         }
-    </style>
-</head>
-<body>
-    <h1>CSS TRANSFORM ANIMATION</h1>
-    
-    <div class="box one">
-        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2026/03/how-old-is-leon-resident-evil-requiem-acf45ce.jpg?quality=90&webp=true&resize=1200,800" alt="">
-    </div>
-    
-    <div class="box two">
-        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/03/how-to-sharpen-leon-s-axe-in-resident-evil-requiem.jpg?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
-    </div>
-    
-    <div class="box three">
-        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2025/06/resident-evil-requiem-re9-release-date-73f9c89.jpg?quality=90&webp=true&resize=1200,800" alt="">
-    </div>
-    
-    <div class="box four">
-       <img src="https://assetsio.gnwcdn.com/leon-outside-of-rpd.jpg?width=380&quality=85&format=jpg&dpr=3&auto=webp" alt="">
-    </div>
-    
-    <div class="box five">
-        <img src="https://thunderword.highline.edu/wp-content/uploads/2026/03/Re9.jpg" alt="">
-    </div>
-    
-    <div class="box six">
-        <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/06/leon-next-to-grace-ashcroft-in-front-of-raccoon-city.png?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
-    </div>
-    
-</body>
-</html>         transform: rotateX(180deg);
-         transform: rotateY(180deg);
-         }
-       .six:hover {
-         transform: translate(60px) rotate(30deg);
-         }
-    </style>
-</head>
-<body>
-    <h1>CSS TRANSFORM ANIMATION</h1>
-    
-    <div class="box one">
-        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2026/03/how-old-is-leon-resident-evil-requiem-acf45ce.jpg?quality=90&webp=true&resize=1200,800" alt="">
-    </div>
-    
-    <div class="box two">
-        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/03/how-to-sharpen-leon-s-axe-in-resident-evil-requiem.jpg?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
-    </div>
-    
-    <div class="box three">
-        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2025/06/resident-evil-requiem-re9-release-date-73f9c89.jpg?quality=90&webp=true&resize=1200,800" alt="">
-    </div>
-    
-    <div class="box four">
-       <img src="https://assetsio.gnwcdn.com/leon-outside-of-rpd.jpg?width=380&quality=85&format=jpg&dpr=3&auto=webp" alt="">
-    </div>
-    
-    <div class="box five">
-        <img src="https://thunderword.highline.edu/wp-content/uploads/2026/03/Re9.jpg" alt="">
-    </div>
-    
-    <div class="box six">
-        <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/06/leon-next-to-grace-ashcroft-in-front-of-raccoon-city.png?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
-    </div>
-    
-</body>
-</html>         border-radius: 10px;
-         box-shadow: 5px 5px 40px rgba(255, 255, 255, 0.4);
-         overflow: hidden;
-         transition: transform 2s;
-         }
-       .one:hover {
-         transform: scale(1.5);
-         }
-       .two:hover {
-         transform: rotate(360deg);
-         }
-       .three:hover {
-         transform: translate(60px,60px);
-         }
-       .four:hover {
-         transform: skew(10deg);
-         }
-       .five:hover {
-         transform: rotateX(180deg);
-         transform: rotateY(180deg);
-         }
-    </style>
-</head>
-<body>
-    <h1>CSS TRANSFORM ANIMATION</h1>
-    
-    <div class="box one">
-        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2026/03/how-old-is-leon-resident-evil-requiem-acf45ce.jpg?quality=90&webp=true&resize=1200,800" alt="">
-    </div>
-    
-    <div class="box two">
-        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2026/03/how-to-sharpen-leon-s-axe-in-resident-evil-requiem.jpg?q=49&fit=crop&w=600&h=338&dpr=2" alt="">
-    </div>
-    
-    <div class="box three">
-        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2025/06/resident-evil-requiem-re9-release-date-73f9c89.jpg?quality=90&webp=true&resize=1200,800" alt="">
-    </div>
-    
-    <div class="box four">
-       <img src="https://assetsio.gnwcdn.com/leon-outside-of-rpd.jpg?width=380&quality=85&format=jpg&dpr=3&auto=webp" alt="">
-    </div>
-    
-    <div class="box five">
-        <img src="https://thunderword.highline.edu/wp-content/uploads/2026/03/Re9.jpg" alt="">
-    </div>
+
 </body>
 </html>
